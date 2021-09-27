@@ -42,7 +42,20 @@ func TestSimple(t *testing.T) {
 
 	lastMessage.SearchByText(t, "hello man") // search text in received messages
 }
+```
 
+And use http://localhost:4999 for fully mock Slack API
+
+```go
+package main
+
+import (
+	"github.com/slack-go/slack"
+)
+
+func main() {
+	api := slack.New("YOUR_TOKEN_HERE", slack.OptionAPIURL("http://localhost:4999"))
+}
 ```
 
 ## Available methods

@@ -49,13 +49,13 @@ func TestSimple(t *testing.T) {
 
 | Method                                                                                    | Description                                                                          |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| ClickByText (t * testing . T ,  text  string ,  waitModal  bool)                          | Find button with text and click on it. And wait modal if need be.                    |
-| SearchByText (t * testing . T ,  text  string )  interface{}                              | Find element with text, and return slack element (https://github.com/slack-go/slack) |
-| Type (t * testing . T ,  searchText  string ,  value  string )  interface{}               | Find input with text, and type value.                                                |
+| ClickByText(t *testing.T, text string, waitModal bool)                          | Find button with text and click on it. And wait modal if need be.                    |
+| SearchByText(t *testing.T, text string) interface{}                              | Find element with text, and return slack element (https://github.com/slack-go/slack) |
+| Type(t *testing.T, searchText string, value string)  interface{}               | Find input with text, and type value.                                                |
 | SubmitForm()                                                                              | Submit view form.                                                                    |
 | WaitHomeUpdate()                                                                          | Wait any home update (publish view)                                                  |
-| ClickByActionId (t * testing . T ,  actionId  string ,  value  string ,  waitModal  bool) | Find button by action, and click on it.                                              |
-| SelectUserByText (t * testing . T ,  text  string ,  user  string)                        | Find user select by text in placeholder, and select user.                            |
-| SelectUsersByText (t * testing . T ,  text  string ,  users [] string)                    | Find multi user select by text in placeholder, and select users.                     |
-| SelectByText (t * testing . T ,  searchText  string ,  value  string)                     | Find select by text in placeholder, and select option by value                       |
-| Messages ()  Messages                                                                     | Get a message for the user. Any message is a page with all the above methods         |
+| ClickByActionId(t *testing.T, actionId string, value string, waitModal bool) | Find button by action, and click on it.                                              |
+| SelectUserByText (t *testing.T, text string, user string)                        | Find user select by text in placeholder, and select user.                            |
+| SelectUsersByText (t *testing.T, text string, users []string)                    | Find multi user select by text in placeholder, and select users.                     |
+| SelectByText (t *testing.T, searchText string, value string)                     | Find select by text in placeholder, and select option by value                       |
+| Messages() Messages                                                                     | Get a message for the user. Any message is a page with all the above methods         |

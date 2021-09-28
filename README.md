@@ -6,6 +6,8 @@ Library for testing interactive Slack applications.
 * Testing Slack UI in the home tab or in message blocks (button/input/etc.). No dependency on Slack API.
 * Integration with GO testing library.
 
+> **⚠️ This tool is still under heavy development! See our [roadmap](https://github.com/youla-dev/slackster/issues/1) for help us ⚠️**
+
 ## Motivation
 
 Slack has a great API for building interactive apps ([https://api.slack.com/block-kit](https://api.slack.com/block-kit)), but no tools to test it. Via Slackster you can do it.

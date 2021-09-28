@@ -6,6 +6,12 @@ Library for testing interactive Slack applications.
 * Testing Slack UI in the home tab or in message blocks (button/input/etc.). No dependency on Slack API.
 * Integration with GO testing library.
 
+## Motivation
+
+Slack has a great API for building interactive apps ([https://api.slack.com/block-kit](https://api.slack.com/block-kit)), but no tools to test it. Via Slackster you can do it.
+
+## Usage
+
 ```go
 func TestSimple(t *testing.T) {
 	teamId := fmt.Sprintf("%v", time.Now().UnixNano())
